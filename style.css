@@ -1,0 +1,156 @@
+/* Universal Styling */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: #6B6A6A;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+a {
+    color: #6B6A6A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c00606;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+/* Header inc Nav */
+
+header{
+    width: 100%;
+    height: auto;
+    /* border-bottom: 1px solid #807f7c; */
+}
+
+header h4 {
+    margin-left: 2rem;
+    padding: 0.5rem;
+    border: 5px solid #6B6A6A;
+    transform: rotate(0deg);
+    transition: transform 1s ease-in-out;
+
+}
+
+header h4:hover {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+nav{
+    text-align: right;
+    flex-grow: 1;
+}
+
+nav p {
+    padding: 0 1rem;
+    display: inline-block;
+}
+
+/* name */
+.name {
+    margin: 3rem;
+}
+
+
+/* banner */
+.banner {
+    background-image: url(./img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    height: 300px;
+    width: 95%;
+    margin: auto;
+}
+
+.banner h2 {
+    background-color: white;
+    width: 100%;
+}
+
+/* about me */
+.about {
+    margin: auto;
+    width: 50%;
+    line-height: 1.5rem;
+    padding-top: 3rem;
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: var(--spacing-1);
+  }
+  
+  /* Projects */
+  #projects {
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+  .project-1 {
+    background-image: url(./img/rpm.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 10rem;
+    margin: 2rem;
+    border: 2px solid #6B6A6A;
+  }
+
+  .project-2 {
+    background-image: url(./img/wmsc.jpg);
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 10rem;
+    margin: 2rem;
+    border: 2px solid #6B6A6A;
+}
+
+.project-3 {
+    background-image: url(./img/fortune-teller.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 10rem;
+    margin: 2rem;
+    border: 2px solid #6B6A6A;
+}
+
+.projects h4 {
+    background-color: white;
+    width: auto;
+}
+
+/* contact info */
+#contact{
+    padding-top: 3rem;
+}
+
+#contact h3 {
+  padding: 0;
+  margin: auto;  
+}
+#contact h4{
+    padding: 0px 2em;
+}

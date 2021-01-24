@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Liam Cooper - Full Stack Developer</title>
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="./img/initials.png" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/90654e8d6e.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="flex-container">
+                <h4>LC</h4>
+                <nav>
+                    <p><a href="#about">About Me</a></p>
+                    <p><a href="#projects">Projects</a></p>
+                    <p><a href="#contact">Contact Info</a></p>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="name">
+                <h1>Liam Cooper</h1>
+                <h4>Full Stack Developer</h4>
+            </div>
+
+            <div class="banner flex-container">
+                <h2>Personal Portfolio</h2>
+            </div>
+
+            <section id="#about" class="flex-conainer">
+                <div class="about">
+                    <h3>About Me:</h3>
+                <p>Currently retraining as a Full Stack Developer 
+                    and really enjoying the challenge of learning something new. 
+                    Have a look below at some of my projects that I have completed so far on my journey. 
+                    If you would like to get in touch please email me using the address below.</p>
+                <p>A cool fact:</p>
+                <p>I have been coding for: <span id="time-container">0</span> seconds!</p>
+                </div>
+            </section>
+            
+            <section id="skills">
+                <h3>Skills:</h3>
+                <div id="skills-container">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+              </section>
+
+            <section id="projects">
+                <h3>Projects:</h3>
+                <div class="projects flex-container">
+                    <div class="project-1 link">
+                        <h4><a href="https://lacoop.github.io/rpmheating/" target="_blank">RPM Plumbing and Heating Ltd.</a></h4>
+                    </div>
+                    <div class="project-2 link">
+                        <h4><a href="https://lacoop.github.io/wmsc/" target="_blank">West Midlands Sailing Club</a></h4>
+                    </div>
+                    <div class="project-3 link">
+                        <h4><a href="https://github.com/LACoop/fortune_teller" target="_blank">Fortune Teller</a></h4>
+                    </div>
+            </section>
+
+            <section id="contact">
+                <h3>Contact Info:</h3>
+                <div class="flex-container">
+                    <h4>email: <a href="mailto: liamacooper@outlook.com">liamacooper@outlook.com</a></h4>
+                    <h4>view my work at: <a href="https://github.com/LACoop">https://github.com/LACoop</a></h4>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const FIRST_DAY = "01-06-2020";
+        const FIRST_DAY_DATE = new Date(FIRST_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
+    
+        setInterval(() => {
+          const now = new Date();
+          const difference = Math.floor(
+            (now.getTime() - FIRST_DAY_DATE.getTime()) / 1000
+          );
+    
+          timeContainer.innerText = intlNumberFormatter.format(difference);
+        }, 1000);
+      </script>
+</html>
