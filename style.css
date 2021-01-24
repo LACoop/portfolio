@@ -154,3 +154,21 @@ nav p {
 #contact h4{
     padding: 0px 2em;
 }
+
+@media only screen and (max-width: 600px) {
+    header h4 {
+        display: inline-block;
+        margin: auto;
+    }
+
+    header h4:hover {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+
+    nav {
+        text-align: center;
+    }
+
+
+}
